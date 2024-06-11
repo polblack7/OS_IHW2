@@ -30,7 +30,7 @@ void encode_text(int child_id) {
     }
     shared_data->encoded_texts[child_id][i] = '\0';
 
-    // Signal that this child has finished encoding its fragment  . .
+    // Signal that this child has finished encoding its fragment.
     sem_post(&shared_data->semaphore);
 }
 
